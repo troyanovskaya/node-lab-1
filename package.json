@@ -1,0 +1,42 @@
+{
+  "name": "lab-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon index.js",
+    "node": "node index.js",
+    "lint": "eslint index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty-check": "npx prettier index.js -c",
+    "pretty-fix": "npx prettier index.js  --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troyanovskaya/node-lab-1.git"
+  },
+  "author": "Anastasiia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troyanovskaya/node-lab-1/issues"
+  },
+  "homepage": "https://github.com/troyanovskaya/node-lab-1#readme",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "husky": "^8.0.1",
+    "prettier": "2.7.1",
+    "stylelint-config-prettier": "^9.0.3"
+  },
+  "dependencies": {
+    "node": "^18.10.0",
+    "nodemon": "^2.0.20",
+    "pre-commit": "^1.2.2"
+  },
+  "husky": {
+    "pre-commit": "pretty-fix"
+  }
+}
