@@ -37,6 +37,6 @@
     "pre-commit": "^1.2.2"
   },
   "husky": {
-    "pre-commit": " npm run pretty-fix"
+    "pre-commit": " npm pretty-fix"
   }
 }
