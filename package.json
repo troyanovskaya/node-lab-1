@@ -34,7 +34,6 @@
   "dependencies": {
     "node": "^18.10.0",
     "nodemon": "^2.0.20",
-    "pre-commit": "^1.2.2"
   },
   "husky": {
     "pre-commit": " npm pretty-fix"
