@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks":{
-      "pre-commit": "pretty-fix"
+      "pre-commit": "npx prettier index.js  --write"
     }
 
   }
