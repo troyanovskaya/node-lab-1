@@ -35,10 +35,5 @@
   "dependencies": {
     "node": "^18.10.0",
     "nodemon": "^2.0.20"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-fix"
-    }
   }
 }
