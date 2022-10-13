@@ -9,7 +9,8 @@
     "lint": "eslint index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretty-check": "npx prettier index.js -c",
-    "pretty-fix": "npx prettier index.js  --write"
+    "pretty-fix": "npx prettier index.js  --write",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-sonarjs": "^0.16.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "prettier": "2.7.1",
     "stylelint-config-prettier": "^9.0.3"
   },
@@ -35,9 +36,9 @@
     "node": "^18.10.0",
     "nodemon": "^2.0.20"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"pretty-fix"
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-fix"
     }
   }
 }
