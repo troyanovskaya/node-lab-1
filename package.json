@@ -36,6 +36,9 @@
     "nodemon": "^2.0.20"
   },
   "husky": {
-    "pre-commit": " npm pretty-fix"
+    "hooks":{
+      "pre-commit": " npm pretty-fix"
+    }
+
   }
 }
