@@ -2,14 +2,15 @@
   "name": "lab-1",
   "version": "1.0.0",
   "description": "",
+  "type":"module",
   "main": "index.js",
   "scripts": {
     "nodemon": "nodemon index.js",
     "node": "node index.js",
     "lint": "eslint index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretty-check": "npx prettier index.js -c",
-    "pretty-fix": "npx prettier index.js  --write",
+    "pretty-check": "npx prettier *.js -c",
+    "pretty-fix": "npx prettier *.js  --write",
     "prepare": "husky install"
   },
   "repository": {
@@ -30,10 +31,10 @@
     "eslint-plugin-sonarjs": "^0.16.0",
     "husky": "^8.0.0",
     "prettier": "2.7.1",
-    "stylelint-config-prettier": "^9.0.3"
-  },
-  "dependencies": {
+    "stylelint-config-prettier": "^9.0.3",
     "node": "^18.10.0",
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
   }
 }
