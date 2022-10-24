@@ -2,10 +2,10 @@
   "name": "lab-1",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "workspaces": [
-    "functions", 
+    "functions",
     "src"
   ],
   "scripts": {
@@ -36,11 +36,9 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-sonarjs": "^0.16.0",
     "husky": "^8.0.0",
-    "prettier": "2.7.1",
-    "stylelint-config-prettier": "^9.0.3",
     "node": "^18.10.0",
-    "nodemon": "^2.0.20"
-  },
-  "dependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "2.7.1",
+    "stylelint-config-prettier": "^9.0.3"
   }
 }
