@@ -2,13 +2,6 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
-    "nodemon": "nodemon index.js",
-    "node": "node index.js",
-    "pretty-check": "npx prettier *.js -c",
-    "pretty-fix": "npx prettier *.js  --write",
-    "lint-fix-all": "eslint *.js --fix",
-    "lint-all": "eslint *.js",
-    "lint-index": "eslint index.js",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
