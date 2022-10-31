@@ -13,5 +13,5 @@
     "rules": {
         "no-console": "off"
     },
-    "plugins": ["sonarjs", "prettier"]
+    "plugins": ["sonarjs", "prettier", "import"]
 }
