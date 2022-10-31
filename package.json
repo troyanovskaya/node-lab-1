@@ -12,10 +12,9 @@
     "nodemon": "nodemon index.js",
     "node": "node index.js",
     "lint-fix-all": "eslint *.js --fix",
-    "lint-all": "eslint *.js",
-    "lint-index": "eslint index.js",
+    "lint-all": "eslint --no-error-on-unmatched-pattern *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretty-check": "npx prettier *.js -c",
+    "pretty-check": "npx prettier --no-error-on-unmatched-pattern *.js -c",
     "pretty-fix": "npx prettier *.js  --write",
     "prepare": "husky install"
   },
