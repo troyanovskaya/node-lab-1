@@ -11,7 +11,8 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-console": "off"
+        "no-console": "off",
+        "import/prefer-default-export": "off"
     },
     "plugins": ["sonarjs", "prettier", "import"]
 }
