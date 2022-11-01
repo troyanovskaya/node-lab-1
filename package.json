@@ -1,21 +1,20 @@
 {
   "name": "lab-1",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
   "main": "index.js",
   "workspaces": [
-    "functions",
-    "src"
+    "functions"
   ],
   "scripts": {
-    "nodemon": "nodemon index.js",
-    "node": "node index.js",
-    "lint-fix-all": "eslint *.js --fix",
-    "lint-all": "eslint --no-error-on-unmatched-pattern *.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pretty-check": "npx prettier --no-error-on-unmatched-pattern *.js -c",
-    "pretty-fix": "npx prettier *.js  --write",
+    "start:dev": "npm run serve --prefix ./functions/",
+    "start": "npm run start --prefix ./functions/",
+    "deploy": "firebase deploy",
+    "build": "npm run --workspaces --if-present build",
+    "lint:check": "npm run --workspaces --if-present lint:check",
+    "lint:fix": "npm run --workspaces --if-present lint:fix",
+    "format:check": "npm run --workspaces --if-present format:check",
+    "format:fix": "npm run --workspaces --if-present format:fix",
     "prepare": "husky install"
   },
   "repository": {
@@ -35,13 +34,16 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-sonarjs": "^0.16.0",
+    "firebase-tools": "^11.15.0",
     "husky": "^8.0.0",
     "node": "^18.10.0",
     "nodemon": "^2.0.20",
     "prettier": "2.7.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "firebase-tools": "^11.15.0"
+    "stylelint-config-prettier": "^9.0.3"
   },
   "dependencies": {
-  }
+    "firebase-functions": "^4.0.1"
+  },
+  "keywords": [],
+  "description": ""
 }
