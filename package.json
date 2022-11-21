@@ -1,0 +1,50 @@
+{
+  "name": "lab-1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "workspaces": [
+    "functions"
+  ],
+  "scripts": {
+    "start:dev": "npm run serve --prefix ./functions/",
+    "start": "npm run start --prefix ./functions/",
+    "deploy": "firebase deploy",
+    "build": "npm run --workspaces --if-present build",
+    "lint:check": "npm run --workspaces --if-present lint:check",
+    "lint:fix": "npm run --workspaces --if-present lint:fix",
+    "format:check": "npm run --workspaces --if-present format:check",
+    "format:fix": "npm run --workspaces --if-present format:fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troyanovskaya/node-lab-1.git"
+  },
+  "author": "Anastasiia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troyanovskaya/node-lab-1/issues"
+  },
+  "homepage": "https://github.com/troyanovskaya/node-lab-1#readme",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "firebase-tools": "^11.15.0",
+    "husky": "^8.0.0",
+    "node": "^18.10.0",
+    "nodemon": "^2.0.20",
+    "prettier": "2.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint": "^14.15.0"
+  },
+  "dependencies": {
+    "firebase-functions": "^4.0.1"
+  },
+  "keywords": [],
+  "description": ""
+}

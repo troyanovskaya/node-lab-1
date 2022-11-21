@@ -1,0 +1,18 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true
+    },
+    "extends": ["eslint:recommended", "airbnb-base", "plugin:sonarjs/recommended", "prettier"],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "off",
+        "import/prefer-default-export": "off"
+    },
+    "plugins": ["sonarjs", "prettier", "import"]
+}
