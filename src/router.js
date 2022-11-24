@@ -18,13 +18,12 @@ async function loadRoutesDir(dirName, base){
         } else if(dirent.isFile() && path.extname(dirent.name) === '.js' && path.basename(dirent.name, '.js') === 'index'){
             const modulePath = pathToFileURL(path.join(workDir, dirent.name));
             let module = await import(modulePath);
-            router.set(relativePath.replaceAll(path.set, '/'), {...module})
-
+            router.set(relativePath.replaceAll(path.sep, '/'), {...module})
         }
-
     }
 
 }
 
 await loadRoutesDir('', path.sep);
-console.log(router);
+
+export default router;
