@@ -12,7 +12,18 @@
     },
     "rules": {
         "no-console": "off",
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": "off",
+        "import/prefer-defaul-export": "off",
+        "import/extensions": ["off"],
+        "sonarjs/cognitive-complexity": ["error", 22],
+        "radix": "off",
+        "no-restricted-syntax": ["off", "ForOfStatement"],
+        "no-unused-vars": "off",
+        "prefer-destructuring": ["error", {
+            "array": false,
+            "object": false
+          }]
     },
     "plugins": ["sonarjs", "prettier", "import"]
 }

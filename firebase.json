@@ -6,16 +6,12 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "/helloWorld",
-        "function": "helloWorld"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "rewrites" : [
+        {
+          "source": "/**",
+          "function": "server"
+        }
+      ]
   },
   "functions": [
     {

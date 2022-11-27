@@ -1,6 +1,6 @@
-function json(data){
+function json(data) {
     this.end(JSON.stringify(data));
 }
 
-const helpers = {json};
+const helpers = { json };
 export default helpers;
